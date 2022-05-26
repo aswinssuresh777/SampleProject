@@ -40,20 +40,20 @@ const GetApi = () => {
   return (
    
     <View style={styles.container}>
-      <Button title="Get data" onPress={() => getData()} />
+      {/* <Button title="Get data" onPress={() => getData()} />
       <Text>ID: {data ? data[0].id : null}</Text>
       <Text>TITLE: {data ? data[0].title : null}</Text>
       <Text>BODY: {data ? data[0].body : null}</Text>
       <Text>ID: {data ? data[1].id : null}</Text>
       <Text>TITLE: {data ? data[1].title : null}</Text>
-      <Text>BODY: {data ? data[1].body : null}</Text>
-      {/* <Button title="Get data" onPress={() => getData()} /> */}
-      {/* <FlatList
+      <Text>BODY: {data ? data[1].body : null}</Text> */}
+      <Button title="Get data" onPress={() => getData()} /> 
+      <FlatList
         data={data}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         extraData={selectedId}
-      /> */}
+      />
     </View>
   );
 };
