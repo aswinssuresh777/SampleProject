@@ -33,6 +33,11 @@ import Add from './components/Add';
 import RestApiGet from './components/RestApiget';
 //import LoginScreen from './login/LoginScreen';
 import GetApi from './Api/GetApi';
+import PostCall from './Api/PostApi';
+import RestApiPost from './components/RestApipost';
+import Select from './components/Select';
+import Student from './components/Student';
+import Avatar from './components/Avatar';
 
 
 
@@ -45,14 +50,20 @@ const App: () => Node = () => {
   };
 
   return (
-    <SafeAreaView style={{flex:1}}>
+    <SafeAreaView style={{flex:2}}>
       {/* <Add/> */}
       {/* <Watsapp/> */}
       {/* <Statevalue/> */}
       {/* <CurrentState/> */}
       {/* <RestApiGet/> */}
       {/* <LoginScreen/> */}
-      <GetApi/>
+      {/* <GetApi/> */}
+      {/* <PostCall/> */}
+      {/* <RestApiPost/> */}
+      <View style={{flex:0.5,backgroundColor:'lightgrey'}}><Avatar/></View>
+      <View style={{flex:0.3}}><Select/></View>
+      <View style={{flex:1.5}}><Student/></View>
+      
     </SafeAreaView>
   );
 };
