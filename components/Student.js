@@ -16,6 +16,8 @@ import {
 } from 'react-native';
 import mick from '..//asserts/images/mick.png';
 import avatar from '..//asserts/images/avatar.png';
+import pdfIcon from '..//asserts/images/pdfIcon.png';
+import deleteIcon from '..//asserts/images/deleteIcon.png';
 const DATA = [
   {
     id: 0,
@@ -100,8 +102,8 @@ const Student = () => {
           numColumns={7}
         />
       </View>
-      <View style={{marginTop: 20}}>
-        <Text style={styles.Assign}>Comment</Text>
+      <View style={{marginTop: 40}}>
+        <Text style={styles.Comment}>Comment</Text>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <TextInput
             multiline={true}
@@ -141,7 +143,7 @@ const Student = () => {
             <Text
               style={{
                 color: 'blue',
-                marginRight: 10,
+                marginRight: 40,
                 fontSize: 20,
                 fontWeight: 'bold',
               }}>
@@ -151,14 +153,30 @@ const Student = () => {
         </View>
         <View
           style={{
-            borderBottomWidth: 2,
-            marginTop: 12,
-            borderBottomColor: 'grey',
+            borderBottomWidth: 3,
+            marginTop:50,
+            borderBottomColor: 'lightgrey',
           }}
         />
-        <View style={{flexDirection: 'row', marginTop: 55}}>
-          <Image />
-          <Text>AssignmentData</Text>
+        <View style={{flexDirection: 'row', marginTop: 80}}>
+          <Image
+          source={pdfIcon} 
+          style={{height:30,width:30,marginLeft:25,marginRight:5}}
+          />
+          <Text style={{marginTop:0,fontSize:25,marginLeft:10}}>AssignmentData</Text>
+          <Image
+          source={deleteIcon} 
+          style={{height:30,width:30,marginLeft:70,marginRight:0}}
+          />
+           <Image
+          source={pdfIcon} 
+          style={{height:30,width:30,marginLeft:150,marginRight:5}}
+          />
+          <Text style={{marginTop:0,fontSize:25,marginLeft:10}}>AssignmentData</Text>
+          <Image
+          source={deleteIcon} 
+          style={{height:30,width:30,marginLeft:70,marginRight:5}}
+          />
         </View>
       </View>
     </SafeAreaView>
@@ -177,6 +195,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: 'black',
     marginBottom: 20,
+  },
+  Comment:{
+    marginLeft: 20,
+    fontWeight: 'bold',
+    fontSize: 25,
+    color: 'black',
   },
   item: {
     padding: 20,

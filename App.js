@@ -61,8 +61,8 @@ const App: () => Node = () => {
       {/* <PostCall/> */}
       {/* <RestApiPost/> */}
       <View style={{flex:0.5,backgroundColor:'lightgrey'}}><Avatar/></View>
-      <View style={{flex:0.3}}><Select/></View>
-      <View style={{flex:1.5}}><Student/></View>
+      <View style={{flex:0.3,backgroundColor:'white'}}><Select/></View>
+      <View style={{flex:1.5,backgroundColor:'white'}}><Student/></View>
       
     </SafeAreaView>
   );
